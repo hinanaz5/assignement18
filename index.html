@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 18</title>
+</head>
+<style>
+
+.para{
+    color: white;
+    background-color: gray;
+}
+
+.new{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+</style>
+<body>
+    
+
+    
+    <script>
+
+// Q1 - Write a function that takes your name and age as an input parameter and print it by using
+// string concatenation.
+
+function intro(name , age) {
+    var myIntro = "Hello! My name is " + name + " and I am " + age+ " years old";
+    return myIntro
+}
+console.log( intro(" Fatima" , 30))
+
+
+
+// Q2 - Write a function name ‘Double’ that takes an input parameter and multiply that parameter
+// by 2 and store the result in a variable and call the function by passing an argument.
+
+function double(a){
+result = a * 2;
+return result
+}
+console.log(double(5))
+
+
+// Q3 - Write a function to print the square of a number by using function expression and that
+// function can be used as variable value for other variables.
+
+var numSquare = function square (c,d){
+    var num = Math.pow(c , d);
+    return num
+}
+
+console.log( numSquare(4,2))
+
+
+// Q4 - Write an arrow function as an expression to check the age of the baby . If the age of the
+// baby is less than 18 print Baby else print adult.
+
+
+var age = findAge = (age)=>{
+    if (age < 18){
+        console.log("it's a baby")
+    } else{
+        console.log("it's an adult")
+    }
+} 
+
+age(5)
+
+// Q5 - Write an arrow function and print a sum of two numbers by passing a single parameter
+// inside the arrow function.
+
+var sum = numSum = (n) =>{
+    var total = n + 3
+    return total
+}
+
+console.log(sum(5))
+
+    </script>
+</body>
+</html>
